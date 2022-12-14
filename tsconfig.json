@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es5",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@gsa-sam/ngx-uswds": [
+        "projects/uswds-components/src/public-api.ts"
+      ],
+      "@gsa-sam/uswds-formly": [
+        "dist/uswds-formly/uswds-formly",
+        "dist/uswds-formly",
+        "projects/uswds-formly/src/public-api.ts",
+      ]
+    },
+    "rootDir": "."
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
